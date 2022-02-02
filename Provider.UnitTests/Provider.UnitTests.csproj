@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="FluentAssertions" Version="6.4.0" />
+        <PackageReference Include="NUnit" Version="3.12.0" />
+        <PackageReference Include="NUnit3TestAdapter" Version="3.16.1" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+        <PackageReference Include="TestStack.BDDfy" Version="4.3.2" />
+        <PackageReference Include="TestStack.BDDfy.Xunit" Version="1.2.0" />
+        <PackageReference Include="xunit" Version="2.4.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Provider.Tests.Shared\Provider.Tests.Shared.csproj" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="5.0.13" />
+    </ItemGroup>
+
+</Project>
